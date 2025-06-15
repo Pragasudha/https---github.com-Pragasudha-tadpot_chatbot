@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Tadpot</title>
+    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Login</h2>
+    <form method="post" action="/chat">
+        <label>Select Role:</label><br>
+        <select name="role">
+            <option>Student</option>
+            <option>Mentor</option>
+            <option>HOD</option>
+        </select><br><br>
+        <input type="submit" value="Enter Chat">
+    </form>
+</body>
+</html>
+
